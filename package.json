@@ -8,6 +8,7 @@
     "repository": "",
     "homepage": "abdulkareem.codes",
     "private": true,
+    "packageManager": "pnpm@10.13.1",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
