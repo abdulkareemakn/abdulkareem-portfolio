@@ -38,49 +38,51 @@ const last_posts = posts.slice(0, 3);
     </div>
 
     <div>
-        <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+        <div class="text-3xl w-full font-bold mb-2">Featured Projects {"</>"}</div>
     </div>
 
     <HorizontalCard
-        title="Demo Project 1"
+        title="Planify"
         img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        url="#"
-        badge="NEW"
-    />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-        title="Demo Project 2"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        url="#"
-    />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-        title="Demo Project 3"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        url="#"
-        badge="FOSS"
-    />
+        desc="Planify, an Event Building and Management Application built using Java and JavaFX."
+        url="https://github.com/abdulkareemakn/Planify"
+         // badge="NEW"
+        />
 
-    <div>
-        <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-    </div>
+        <div class="divider my-0"></div>
+        <HorizontalCard
+            title="Semester Project"
+            img="/post_img.webp"
+            desc="A Stock and Inventory Management Application written in C++."
+            url="https://github.com/abdulkareemakn/SemesterProject"
+        />
+        <div class="divider my-0"></div>
+        <HorizontalCard
+            title="Demo Project 3"
+            img="/post_img.webp"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            url="#"
+            badge="FOSS"
+        />
 
-    {
-        last_posts.map((post) => (
-            <>
-                <HorizontalCard
-                    title={post.data.title}
-                    img={post.data.heroImage}
-                    desc={post.data.description}
-                    url={"/blog/" + createSlug(post.data.title, post.slug)}
-                    target="_self"
-                    badge={post.data.badge}
-                />
-                <div class="divider my-0" />
-            </>
-        ))
-    }
+        <div>
+            <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+        </div>
+
+        {
+            last_posts.map((post) => (
+                <>
+                    <HorizontalCard
+                        title={post.data.title}
+                        img={post.data.heroImage}
+                        desc={post.data.description}
+                        url={"/blog/" + createSlug(post.data.title, post.slug)}
+                        target="_self"
+                        badge={post.data.badge}
+                    />
+                    <div class="divider my-0" />
+                </>
+            ))
+        }
+    </HorizontalCard>
 </BaseLayout>
