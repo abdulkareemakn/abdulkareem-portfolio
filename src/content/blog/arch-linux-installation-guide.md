@@ -1,18 +1,9 @@
 ---
-<!-- author: Abdul Kareem -->
-<!-- pubDatetime: 2026-04-25T14:32:00Z -->
-<!-- pubDatetime: 2026-04-25T16:00:00Z -->
 title: How to install Arch Linux
 description: A comprehensive Arch Linux installation guide configured how I like it.
 pubDate: "2026-04-26"   
-<!-- slug: arch-linux-install-guide -->
 heroImage: "/post_img.webp"
-<!-- featured: true -->
 tags: ["arch"]
-<!-- tags:  -->
-<!--   - arch -->
-<!--   - open-source -->
-<!-- hideEditPost: true -->
 ---
 
 <!-- ## Table of Contents -->
